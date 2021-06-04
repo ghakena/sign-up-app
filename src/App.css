@@ -1,38 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+}
+body {
+  font-family: 'Mukta', sans-serif;
+  font-size: 62.5%;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 0rem;
+}
+.App h1 {
+  font-family: 'Mukta', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 3.0rem;
+  padding-bottom: 1.0rem;
+}
+.App .container {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.App .container .signup-form {
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App .container .form-group {
+  margin-bottom: 0.5rem;
+}
+.App .container .signup-form label {
+  display: block;
+}
+.App .container .signup-form input {
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+  border: 1px solid black;
+}
+button {
+  padding: 0.5em 1.0em;
+  font-size: 1.0rem;
+  font-family: 'Mukta', sans-serif;
+  border-radius: 0.2rem;
+  border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 1007px) {
+  .App {
+    background-color: #2D7DD2;
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1008px) {
+  .App {
+    background-image: url('https://res.cloudinary.com/rokuirie/image/upload/v1622826251/sign-up%20app/angela-compagnone-hBagjj4vUaY-unsplash_-_reduced_rkmnn4.jpg');
+  }
+  .App label {
+    font-weight: 500;
   }
 }
